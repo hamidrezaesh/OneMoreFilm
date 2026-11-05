@@ -17,8 +17,8 @@ A simple movie discovery website that randomly picks a movie for you.
 ## Run Locally
 
 ```bash
-git clone https://github.com/hamidrezaesh/one-more-film.git
-cd one-more-film
+git clone https://github.com/hamidrezaesh/OneMoreFilm.git
+cd OneMoreFilm
 npm install
 npm run dev
 ```
