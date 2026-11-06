@@ -1,6 +1,11 @@
-# [ One More Film 🎬](https://onemorefilm.pages.dev/)
+<h1 align="center">One More Film 🎬</h1>
 
-A simple movie discovery website that randomly picks a movie for you.
+<p align="center">
+  <a href="https://onemorefilm.pages.dev/">Link</a>
+</p>
+
+<p align="center">A simple movie discovery website that randomly picks a movie for you.
+</p>
 
 ## Features
 - Random movie recommendations
