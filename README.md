@@ -18,6 +18,7 @@
 - JavaScript
 - Tailwind CSS
 - Vite
+- Cloudflare Pages
 
 ## Run Locally
 
