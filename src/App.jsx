@@ -4,6 +4,7 @@ import GetMovie from "./services/cinemeta";
 
 import desktopBackground from "./assets/home_background.png";
 import mobileBackground from "./assets/home_background_mobile.png";
+import placeholder from "./assets/placeholder.png";
 
 export default function App() {
     const [movie, setMovie] = useState(null);
@@ -26,6 +27,18 @@ export default function App() {
 
     return (
         <main className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900">
+            {/* Github Link */}
+            <a
+                href="https://github.com/hamidrezaesh/OneMoreFilm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute top-5 right-5 z-20
+                text-sm font-medium text-white/70
+                hover:text-amber-500
+                transition-colors duration-200"
+            >
+                GitHub
+            </a>
 
             {/* Background */}
             <div
@@ -79,8 +92,13 @@ export default function App() {
                         className="group relative block w-56 md:w-72 overflow-hidden rounded-xl shadow-2xl"
                     >
                         <img
-                            src={movie.poster}
+                            key={movie.id}
+                            src={movie.poster || placeholder}
                             alt={movie.name}
+                            onError={(e) => {
+                                e.currentTarget.onerror = null;
+                                e.currentTarget.src = "./assets/placeholder.png";
+                            }}
                             className="w-full transition-transform duration-300 group-hover:scale-105"
                         />
 
